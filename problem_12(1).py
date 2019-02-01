@@ -1,3 +1,4 @@
+
 import time
 
 start_time = time.time()
@@ -10,8 +11,9 @@ while True:
     for div in range(1,tri_num+1):
         if tri_num % div == 0:
             divisors +=1
-    if divisors == 500:
+    if divisors > 500:
         break
+    print(divisors)
     tri_num = 0
     divisors = 0
     num+=1
@@ -20,6 +22,3 @@ print(tri_num)
 print(' ')
 print(time.time()-start_time)
 
-
-
-    
