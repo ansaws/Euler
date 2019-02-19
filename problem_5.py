@@ -27,7 +27,6 @@ while True:
 																			if num%20==0:
 																				break
 	num+=20
-		
-	
+
 
 print(num)
