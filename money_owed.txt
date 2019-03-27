@@ -1,1 +1,3 @@
-$3
+money owed - $4
+
+when lecture 21 finish = +$2
