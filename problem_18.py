@@ -16,6 +16,20 @@ all =  [[75],
 new = []
 num=0
 y=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 for x in range(13-num, -1, -1):
     while True:
         c=all[x][y]
