@@ -8,7 +8,7 @@ while True:
     for number in range(1,num+1):
         tri_num += number
     if tri_num%2 == 0:
-        for div in range(1,round(tri_num**(1/2))):
+        for div in range(1,round(tri_num**(12))):
             if tri_num % div == 0:
                 divisors +=1
     if tri_num%2 == 1:
