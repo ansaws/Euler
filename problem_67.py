@@ -124,16 +124,3 @@ for num in range(97, -1,-1):
         else:            
             new.append(control+rn)
     print(new)
-
-
-
-
-
-
-
-
-
-
-
-
-
