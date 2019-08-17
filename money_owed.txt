@@ -1,3 +1,4 @@
-money owed - $27
+money owed - $184
+pranav - 1
 
-when lecture 27 finish = +$2
+when lecture 34 finish = +$2
