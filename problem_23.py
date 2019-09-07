@@ -1,5 +1,5 @@
 abundant_num = []
-abundant_num_sum = []
+abundant_num_sum = 0
 all_num = []
 divisors = []
 for num in range (28124):
@@ -15,15 +15,10 @@ for num in range (28124):
 for num in abundant_num:
 	for n in range(1, len(abundant_num)-1):
 		for num_1 in range(n, len(abundant_num)):
-			abundant_num_sum.append(num+ abundant_num[num_1])
+			abundant_num_sum+=(num+ abundant_num[num_1])
 
 for num in range(28124):
 	all_num.append(num)
 
-for num in abundant_num_sum:
-	if num in abundant_num:
-		abundant_num.remove(num)
 
-print(sum(abundant_num))
-	
-
+print(sum(abundant_num)-abundant_num_sum)
