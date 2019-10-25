@@ -14,7 +14,7 @@ max_num = 0
 for num in range(2,1000):
 	if isprime(num)==True:
 		dig = 10//num
-		c_dig = dig+1
+		c_dig = dig
 		len = 0
 		rem = 10%num
 		while c_dig != dig:
