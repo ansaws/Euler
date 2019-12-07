@@ -2,7 +2,7 @@ import math
 st = None
 t1 = 0
 total = 0
-for num in range(10,9999999):
+for num in range(10,999999):
     st = str(num)
     for i in st:
         t1+= math.factorial(int(i))
