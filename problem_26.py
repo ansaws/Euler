@@ -1,3 +1,6 @@
+from Lib.ISPRIME import isPrime as isprime
+
+"""
 def isprime(num):
 	sum_prime=0
 
@@ -8,6 +11,7 @@ def isprime(num):
 			sum_prime+= 1
 		if sum_prime == int(round(num**(1/2))-1):
 			return True
+"""
 
 len_1 = 0
 max_num = 0

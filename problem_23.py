@@ -1,6 +1,6 @@
-from divisors import *
+from Lib.divisors import divisors
+s = []
 ab = []
-s = 0
 tot = 0
 for i in range(2,28123):
 	if sum(divisors(i))>i:
@@ -9,7 +9,9 @@ for i in range(2,28123):
 		continue
 for f in ab:
 	for t in ab:
-		s += t+f
+		if t+f<28123:
+			s.append(t+f)
+s= set(s)
 for yeet in range(1, 28124):
 	tot += yeet
-print(tot-s)
+print(tot-sum(s))

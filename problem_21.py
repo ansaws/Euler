@@ -1,16 +1,10 @@
-#sucess
-def d(num):
-    sum = 0
-    for num_1 in range(1, num):
-        if num%num_1 == 0:
-            sum += num_1
-    return sum
-sum = 0
+from Lib.divisors import divisors as d
+su = 0
 for a in range(1,10001):
-    b = d(a)
-    if (a == d(b)) and (a != b):
-        sum += a
-print(sum)
+    b = sum(d(a))
+    if (a == sum(d(b))and (a != b)):
+        su += a
+print(su)
 
 
 
