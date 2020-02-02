@@ -31,29 +31,25 @@ max_count = 0
 rem2= 1
 max_num = 0 
 for num in range(9,1000,2):
-  print(num)
   while rem<num:
     rem =rem* 10
-    print(rem) 
-  f_dig = rem//num
+    count+=1
+  f_dig = num//rem
   count +=1
-  rem = rem%num
-  print(num,rem)
+  rem = num%rem
   rem2 = rem
-  print(f_dig)
   while f_dig != dig:
-    print(dig)
     while rem<num:
       rem = rem *10
-    dig = rem//10
+      count +=1
+    dig = num//rem
     count +=1
-    rem = rem%num
+    rem = num%rem
     count+=1
-  print(count)
   if count>=max_count:
     max_count = count
     max_num= num
-    count = 0
+  count = 0
   rem2 = rem
-    
+#switch the order of the floor division and also replace all tens and stuff its is 
 print(max_count, max_num)
