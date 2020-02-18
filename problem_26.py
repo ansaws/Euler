@@ -34,22 +34,22 @@ for num in range(9,1000,2):
   while rem<num:
     rem =rem* 10
     count+=1
-  f_dig = num//rem
+  f_dig = rem//num
   count +=1
-  rem = num%rem
+  rem = rem%num
   rem2 = rem
   while f_dig != dig:
     while rem<num:
       rem = rem *10
       count +=1
-    dig = num//rem
+    dig = rem//num
     count +=1
-    rem = num%rem
+    rem = rem%num
     count+=1
   if count>=max_count:
     max_count = count
     max_num= num
+    print(max_count)
   count = 0
   rem2 = rem
-#switch the order of the floor division and also replace all tens and stuff its is 
 print(max_count, max_num)
