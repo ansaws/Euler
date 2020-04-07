@@ -49,7 +49,8 @@ for num in range(9,1000,2):
   if count>=max_count:
     max_count = count
     max_num= num
-    print(max_count)
+    print(max_count, num)
   count = 0
   rem2 = rem
 print(max_count, max_num)
+#RUNS INTO INFINITE LOOP OR JUST IS PLAIN INNEFICEINT AFTER MAX_COUNT = 19 OR SOMETIME AFTER NUM = 13
