@@ -63,6 +63,7 @@ for onep in range(0, 201,100):
       break
     for fivep in range(0, 201,20):
       if onep+twop+fivep==200:
+        count+=1
         break
       if onep+twop+fivep >200:
         break
@@ -90,7 +91,7 @@ for onep in range(0, 201,100):
                 break
               if onep+twop+fivep+tenp+twentp+oneE +yeet >200:
                 break
-print(count)
+print(count+1)
 
 
 
