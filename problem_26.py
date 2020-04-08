@@ -13,8 +13,8 @@ for n1 in range(9,1001,2):
       n2 = n2*10
       answer.append(0)
     if n2%n1 == 0:
+      count = 1
       break
-      count =1
     ans = n2//n1
     n2 =n2 - (n1*ans)
     for yeet in range(0, len(answer)-1):
@@ -22,15 +22,15 @@ for n1 in range(9,1001,2):
         thing = yeet
         break
     if ans in answer:
-      del answer[:yeet]
+      del answer[:thing]
       break
     else:
       answer.append(ans)
   if count ==1:
     continue
-  count = 0
   if len(answer)> max_count:
     max_count = len(answer)
+  count = 0
   n2 = 10
   answer = []
 print(max_count)
