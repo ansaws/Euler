@@ -1,9 +1,10 @@
-#RUNS INTO INFINITE LOOP OR JUST IS PLAIN INNEFICEINT AFTER MAX_COUNT = 19 OR SOMETIME AFTER NUM = 13
+
 n2= 10
 answer = []
 ans = 0
 count = 0
 max_count = 0
+max_num = 0
 thing = 0
 for n1 in range(9,1001,2):
   while n1 > n2:
@@ -30,9 +31,10 @@ for n1 in range(9,1001,2):
     continue
   if len(answer)> max_count:
     max_count = len(answer)
+    max_num = n1
   count = 0
   n2 = 10
   answer = []
 print(max_count)
-
+print(max_num)
 
