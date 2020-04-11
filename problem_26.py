@@ -1,4 +1,5 @@
-
+from Lib.ISPRIME import isPrime
+"""
 n2= 10
 answer = []
 ans = 0
@@ -35,6 +36,29 @@ for n1 in range(9,1001,2):
   count = 0
   n2 = 10
   answer = []
+"""
+n2 = 10
+digits = []
+digit = 0
+max_count = 0
+for n1 in range(2,1000):
+  n2 = 10
+  while True:
+    if n1>n2:
+      n2*=10
+    while n1>n2:
+      n2*=10
+      digits.append(0)
+    if n2%n1==0:
+      break
+    digit = n2//n1
+    n2-= digit*n1
+    digits.append(digit)
+    if digits.count(digit)>1:
+      digits.pop()
+      if len(digits)-digits.index(digit) >max_count:
+        max_count = len(digits)-digits.index(digit)
+      break
+  digits = []
 print(max_count)
-print(max_num)
-
+    
