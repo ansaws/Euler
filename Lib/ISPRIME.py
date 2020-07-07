@@ -7,4 +7,6 @@ def isPrime(num):
         break
   else:
     prime = False
+  if num ==1:
+    prime = False
   return prime

@@ -10,6 +10,6 @@ while num<1000:
     if num%3==0:
         sum += num
     elif num%5==0:
-        sum += num
+        sum+=num
     num+=1
 print(sum)
