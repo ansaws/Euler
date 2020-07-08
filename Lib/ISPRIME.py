@@ -9,4 +9,6 @@ def isPrime(num):
     prime = False
   if num ==1:
     prime = False
+  if num ==2:
+    prime = True
   return prime
