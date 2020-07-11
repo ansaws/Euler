@@ -1,2 +1,2 @@
-from Lib.ISPRIME import isPrime
-print(isPrime(2))
+strNum = "213"
+print(sorted(strNum))

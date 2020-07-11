@@ -1,10 +1,10 @@
 from Lib.ISPRIME import isPrime
 from math import log10
-primeSum = 0
-numPrimes = 0
-prime = 11
-tempPrime = prime
-check = False
+primeSum:int = 0
+numPrimes:int = 0
+prime:int = 11
+tempPrime:int = prime
+check:bool = False
 while numPrimes<11:
     tempPrime =prime
     if isPrime(prime) == False:
