@@ -37,12 +37,13 @@ for n1 in range(9,1001,2):
   n2 = 10
   answer = []
 """
-n2 = 10
+
+ans = 0
+n2 = 1
 digits = []
 digit = 0
 max_count = 0
 for n1 in range(2,1000):
-  n2 = 10
   while True:
     if n1>n2:
       n2*=10
@@ -53,12 +54,13 @@ for n1 in range(2,1000):
       break
     digit = n2//n1
     n2-= digit*n1
-    digits.append(digit)
-    if digits.count(digit)>1:
+    digits.append(n2)
+    if digits.count(n2)>1:
       digits.pop()
-      if len(digits)-digits.index(digit) >max_count:
-        max_count = len(digits)-digits.index(digit)
+      if len(digits)-digits.index(n2) >max_count:
+        max_count = len(digits)-digits.index(n2)
+        ans = n1
       break
   digits = []
-print(max_count)
+print(ans)
     
