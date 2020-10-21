@@ -1,3 +1,3 @@
-num = "1234"
-x = 0
-print(num[x:x+3])
+thingy = "abcd"
+splits = thingy.split("e")
+print(splits)
