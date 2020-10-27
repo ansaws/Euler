@@ -1,25 +1,36 @@
 from Lib.ISPRIME import isPrime
-num = 27
-chnum = 0
-found = False
-checkSq = 1
+count = 25
+cCheck = 0
 check = 1
-while found == False:
-    checkSq =1
-    check = 1
-    chnum = num
-    if(isPrime(num) == True):
-        num+=2
+diff = 0
+while True:
+    cCheck = 0
+    if isPrime(count) == True:
+        count +=2
+        check = 1
         continue
-    else:
-        while num>(checkSq**2)*2:
-            if isPrime(num-(checkSq**2)*2) == True:
-                num+=2
-                break
-            else:
-                check+=1
-            checkSq+=1
-        if(check == (checkSq**2)*2):
-            found = True
-            print(checkSq)
-            print(num)
+    diff = count-(2*(check**2))
+    if(diff<0):
+        break
+    if isPrime(diff) == True:
+        count +=2
+        check = 1
+        continue
+    check +=1
+    while True:
+        diff = count-(2*(check**2))
+        if(diff<0):
+            break
+        if isPrime(diff) == True:
+            count +=2
+            check = 1
+            break
+        check +=1
+    if cCheck>check:
+        break
+print(count)
+
+
+
+        
+        
