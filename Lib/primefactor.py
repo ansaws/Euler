@@ -21,7 +21,7 @@ def pFactor(num):
         final[num] = 1
         return final
     while isPrime(nonPrime) == False:
-        while nonPrime%div !=0: #and isPrime(div) == False:
+        while nonPrime%div !=0:
             div+=1
         if div in final.keys():
             final[div] +=1
